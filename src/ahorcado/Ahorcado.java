@@ -12,12 +12,15 @@ public class Ahorcado {
 	 * @param vidas
 	 * 
 	 */
+	
+	//Volcado a casa.
+	
 	public static void main(String[] args) {
 		char[] adivinar = { 'V', 'I', 'E', 'R', 'N', 'E', 'S' };
 		// char[] adivinar = seleccionarPalabra();
 		char[] resuelto = new char[adivinar.length];
 		boolean[] aciertos = new boolean[adivinar.length];
-		int vidas = 7;
+		int vidas = 8;
 		char letra = ' ';
 		boolean control = false;
 		boolean igualarPalabras = false;
