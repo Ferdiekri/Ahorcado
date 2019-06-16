@@ -7,20 +7,29 @@ public class Ahorcado {
 	/**
 	 * Juego del ahorcado.
 	 * 
-	 * @param adivinar
-	 * @param resuelto
-	 * @param vidas
+	 * @param adivinar        (char[]) - array que guarda la palabra secreta.
+	 * @param resuelto        (char[]) - array que va guardando las respuestas
+	 *                        correctas.
+	 * @param aciertos        (boolean[]) - array que comprueba si se ha acertado
+	 *                        una letra.
+	 * @param vidas           (int) - número de vidas del jugador.
+	 * @param letra           (char) - variable donde se guardará la letra
+	 *                        introducida por teclado.
+	 * @param control         (boolean) - variable que controla si ha fallado para
+	 *                        quitarle una vida.
+	 * @param igualarPalabras (boolean) - variable que comprueba si las dos palabras
+	 *                        son iguales.
+	 * @param sc              (Scanner) - variable para recoger letras por teclado.
+	 *                        MÉTODOS: igualarPalabras
 	 * 
 	 */
-	
-	//Volcado a casa.
-	
+
 	public static void main(String[] args) {
-		char[] adivinar = { 'V', 'I', 'E', 'R', 'N', 'E', 'S' };
-		// char[] adivinar = seleccionarPalabra();
+		// char[] adivinar = { 'V', 'I', 'E', 'R', 'N', 'E', 'S' };
+		char[] adivinar = seleccionarPalabra();
 		char[] resuelto = new char[adivinar.length];
 		boolean[] aciertos = new boolean[adivinar.length];
-		int vidas = 8;
+		int vidas = 7;
 		char letra = ' ';
 		boolean control = false;
 		boolean igualarPalabras = false;
@@ -75,15 +84,22 @@ public class Ahorcado {
 
 			igualarPalabras = comprobarPalabras(adivinar, resuelto);
 
-		} while ((!igualarPalabras) || (vidas > 0));
+		} while (!igualarPalabras);
 
 		System.out.println("FIN DEL PROGRAMA.");
 
 		sc.close();
 	}
 
+	/**
+	 * Función que selecciona una palabra aleatoria.
+	 * 
+	 * @param palabras (String[]) - array con diferentes palabras.
+	 * @param elegir (int) - variable que decicirá qué palabra de la array se elige.
+	 * @return (char[]) - array con la palabra a adivinar.
+	 */
 	public static char[] seleccionarPalabra() {
-		String[] palabras = { "VIERNES", "CASA", "GATO", "PLAYA", "NIEVE", "JAVA", "GITHUB" };
+		String[] palabras = { "JAVA", "GITHUB", "PUSH", "COMMIT", "FUNCTION", "MAIN", "INT", "CHAR", "BOOLEAN", "STRING" };
 		int elegir = 0;
 
 		elegir = (int) (Math.random() * palabras.length);
@@ -98,6 +114,12 @@ public class Ahorcado {
 		return resultado;
 	}
 
+	/**
+	 * 
+	 * @param primera (char[]) - array con la palabra original.
+	 * @param segunda (char[]) - array con la palabra del jugador.
+	 * @return (boolean) - devuelve si las dos arrays son iguales.
+	 */
 	public static boolean comprobarPalabras(char[] primera, char[] segunda) {
 		String original = "";
 		String creada = "";
