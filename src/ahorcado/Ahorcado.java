@@ -73,6 +73,7 @@ public class Ahorcado {
 
 			if (!control) {
 				vidas--;
+				dibujarAhorcado(vidas);
 			}
 
 			if (vidas == 0) {
@@ -83,6 +84,9 @@ public class Ahorcado {
 			}
 
 			igualarPalabras = comprobarPalabras(adivinar, resuelto);
+			if (igualarPalabras) {
+				System.out.println("¡HAS ACERTADO! Enhorabuena. Te has salvado.");
+			}
 
 		} while (!igualarPalabras);
 
@@ -95,11 +99,13 @@ public class Ahorcado {
 	 * Función que selecciona una palabra aleatoria.
 	 * 
 	 * @param palabras (String[]) - array con diferentes palabras.
-	 * @param elegir (int) - variable que decicirá qué palabra de la array se elige.
+	 * @param elegir   (int) - variable que decicirá qué palabra de la array se
+	 *                 elige.
 	 * @return (char[]) - array con la palabra a adivinar.
 	 */
 	public static char[] seleccionarPalabra() {
-		String[] palabras = { "JAVA", "GITHUB", "PUSH", "COMMIT", "FUNCTION", "MAIN", "INT", "CHAR", "BOOLEAN", "STRING" };
+		String[] palabras = { "JAVA", "GITHUB", "PUSH", "COMMIT", "FUNCTION", "MAIN", "INT", "CHAR", "BOOLEAN",
+				"STRING" };
 		int elegir = 0;
 
 		elegir = (int) (Math.random() * palabras.length);
@@ -130,6 +136,126 @@ public class Ahorcado {
 		}
 
 		return original.equals(creada);
+	}
+
+	/**
+	 * Dibuja un poco más del dibujo cada vez que entre.
+	 * 
+	 * @param vidas (int) - el número decide cuánto pintar.
+	 */
+	public static void dibujarAhorcado(int vidas) {
+
+		switch (vidas) {
+		case 0:
+			System.out.println("-------------------");
+			System.out.println(" |          |      ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |      | x   x |  ");
+			System.out.println(" |      |   ~   |  ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |          |      ");
+			System.out.println(" |        / | \\   ");
+			System.out.println(" |       /  |  \\  ");
+			System.out.println(" |          |      ");
+			System.out.println(" |         / \\    ");
+			System.out.println(" |        /   \\   ");
+			System.out.println("------             ");
+			break;
+		case 1:
+			System.out.println("-------------------");
+			System.out.println(" |          |      ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |      |       |  ");
+			System.out.println(" |      |       |  ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |          |      ");
+			System.out.println(" |        / | \\   ");
+			System.out.println(" |       /  |  \\  ");
+			System.out.println(" |          |      ");
+			System.out.println(" |         / \\    ");
+			System.out.println(" |        /   \\   ");
+			System.out.println("------             ");
+			break;
+		case 2:
+			System.out.println("-------------------");
+			System.out.println(" |          |      ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |      |       |  ");
+			System.out.println(" |      |       |  ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |          |      ");
+			System.out.println(" |        / | \\   ");
+			System.out.println(" |       /  |  \\  ");
+			System.out.println(" |          |      ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println("-------------------");
+			break;
+		case 3:
+			System.out.println("-------------------");
+			System.out.println(" |          |      ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |      |       |  ");
+			System.out.println(" |      |       |  ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |          |      ");
+			System.out.println(" |          |      ");
+			System.out.println(" |          |      ");
+			System.out.println(" |          |      ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println("-------------------");
+			break;
+		case 4:
+			System.out.println("-------------------");
+			System.out.println(" |          |      ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |      |       |  ");
+			System.out.println(" |      |       |  ");
+			System.out.println(" |       -------   ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println("-------------------");
+			break;
+		case 5:
+			System.out.println("-------------------");
+			System.out.println(" |          |      ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println("-------------------");
+			break;
+		case 6:
+			System.out.println("-------------------");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println(" |                 ");
+			System.out.println("-------------------");
+			break;
+
+		default:
+			break;
+		}
+
 	}
 
 }
