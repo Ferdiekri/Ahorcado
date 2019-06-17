@@ -7,7 +7,8 @@ public class Ejercicio02 {
 	/**
 	 * Programa que calcula si un jugados se puede clasificar esta temporada.
 	 * 
-	 * @param puntos (int) -
+	 * @param puntos (int) - variable que guarde el dato recogido por teclado.
+	 * @param sc   (Scanner) variable para recoger datos por teclado.
 	 */
 	public static void main(String[] args) {
 		int puntos = 0;
