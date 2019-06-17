@@ -7,16 +7,19 @@ import java.util.Scanner;
  */
 public class Ejercicio03 {
 
+	final static int MAX_NUMEROS = 10;
+	static int[] datos = new int[MAX_NUMEROS];
+
 	/**
 	 * Programa que muestre los múltiplos de 7 y la media de los números recogidos
 	 * en una array.
 	 */
 	public static void main(String[] args) {
-		int[] datos = new int[10];
+
 		Scanner sc = new Scanner(System.in);
 
-		for (int i = 0; i < datos.length; i++) {
-			System.out.print("Introduce el número de la posición #" + i + ": ");
+		for (int i = 0; i < MAX_NUMEROS; i++) {
+			System.out.print("Introduce el " + (i + 1) + "º número: ");
 			datos[i] = Integer.parseInt(sc.nextLine());
 		}
 
@@ -37,7 +40,7 @@ public class Ejercicio03 {
 	public static void multiplosSiete(int[] datos) {
 		int contador = 0;
 
-		for (int i = 0; i < datos.length; i++) {
+		for (int i = 0; i < MAX_NUMEROS; i++) {
 			if (datos[i] % 7 == 0) {
 				contador++;
 				System.out.println("El número " + datos[i] + " es múltiplo de 7.");
@@ -54,10 +57,10 @@ public class Ejercicio03 {
 	public static void mediaDatos(int[] datos) {
 		float suma = 0;
 
-		for (int i = 0; i < datos.length; i++) {
-			suma = suma + datos[i];
+		for (int i = 0; i < MAX_NUMEROS; i++) {
+			suma += datos[i];
 		}
-		System.out.printf("La media de los número es: %.2f", suma / datos.length);
+		System.out.printf("La media de los número es: %.2f", suma / MAX_NUMEROS);
 	}
 
 }

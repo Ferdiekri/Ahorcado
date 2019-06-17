@@ -19,22 +19,20 @@ public class Ejercicio01 {
 	 * pertenecen.
 	 */
 	public static void main(String[] args) {
-		
-		
-		
+
 		int peso = 0;
 		Scanner sc = new Scanner(System.in);
 
 		for (int i = 1; i <= MAX_BOXEADORES; i++) {
-			
+
 			try {
 				System.out.print("Introduce el peso del boxeador #" + i + ": ");
 				peso = Integer.parseInt(sc.nextLine());
-				
-				if (peso<=0) {
+
+				if (peso <= 0) {
 					throw new Exception("Peso incorrecto. Debe ser mayor que 0.");
 				}
-				
+
 				if (peso < PESO_MOSCA) {
 					System.out.println("Este boxeador entra en la categoría de MOSCA.");
 				} else if (peso < PESO_PLUMA) {
@@ -45,15 +43,14 @@ public class Ejercicio01 {
 					System.out.println("Este boxeador entra en la categoría de MEDIANO.");
 				} else {
 					System.out.println("Este boxeador entra en la categoría de PESADO.");
-				}				
-				
+				}
+
 			} catch (Exception e) {
-				//e.printStackTrace();
+				// e.printStackTrace();
 				System.out.println("Ha introducido datos sin el formato indicado o fuera del rango.");
 				break;
 			}
 
-			
 		}
 
 		sc.close();

@@ -30,7 +30,7 @@ public class Ejercicio02 {
 	/**
 	 * Función que calcula si el jugador se clasifica.
 	 * 
-	 * @param puntos     (int) - los puntos recibidos por teclado
+	 * @param puntos (int) - los puntos recibidos por teclado
 	 * @return (boolean) - verdadero si pasa de 70 puntos. Si no, falso.
 	 */
 	public static boolean ganar(int puntos) {
