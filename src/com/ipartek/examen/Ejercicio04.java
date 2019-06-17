@@ -9,7 +9,7 @@ public class Ejercicio04 {
 
 	/**
 	 * Programa que pida los datos de un tren, los muestre y diga si está lleno o es
-	 * viejo.
+	 * viejo. 
 	 */
 	public static void main(String[] args) {
 		String tipo = null;

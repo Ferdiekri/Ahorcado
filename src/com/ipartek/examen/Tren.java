@@ -39,7 +39,7 @@ public class Tren {
 		return tipo;
 	}
 
-	public void setTipo(String tipo) throws Exception {		
+	public void setTipo(String tipo) throws Exception {
 		this.tipo = tipo;
 	}
 
@@ -67,14 +67,6 @@ public class Tren {
 		this.annosActivo = annosActivo;
 	}
 
-	/*
-	 * public void setCodigo(String codigo) throws Exception { if ((codigo != null)
-	 * && (codigo.length() == LONGITUD_CODIGO)) { this.codigo = codigo; } else {
-	 * throw new Exception("La longitud del código debe ser " + LONGITUD_CODIGO +
-	 * "."); } }
-	 * 
-	 */
-
 	// resto de funciones
 
 	@Override
@@ -87,6 +79,7 @@ public class Tren {
 	/**
 	 * Función que calcula si el tren tiene todas las plazas ocupadas.
 	 * 
+	 * @see MAXIMOS_PASAJEROS
 	 * @return (boolean) - verdadero si el tren está lleno.
 	 */
 	public boolean trenLleno() {
@@ -102,6 +95,7 @@ public class Tren {
 	/**
 	 * Función que calcula si el tren es demasiado viejo para circular.
 	 * 
+	 * @see ANNOS_ACTIVO
 	 * @return (boolean) - verdadero si el tren es viejo.
 	 */
 	public boolean demasiadoViejo() {
