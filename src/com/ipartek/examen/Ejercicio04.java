@@ -10,15 +10,6 @@ public class Ejercicio04 {
 	/**
 	 * Programa que pida los datos de un tren, los muestre y diga si está lleno o es
 	 * viejo.
-	 * 
-	 * @param tipo             (String) - tipo de tren (Mercancías, pasajeros,
-	 *                         turístico...)
-	 * @param referencia       (int) - identificador del tren.
-	 * @param asientosOcupados (int) - número de asientos ocupados del tren.
-	 * @param annosActivo      (int) - años en activo del tren.
-	 * @param sc               (Scanner) variable para recoger datos por teclado.
-	 * @param locomotroa       (Tren) - array de Tren cuyos datos son introducidos
-	 *                         por teclado.
 	 */
 	public static void main(String[] args) {
 		String tipo = null;

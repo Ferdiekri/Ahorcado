@@ -10,9 +10,6 @@ public class Ejercicio03 {
 	/**
 	 * Programa que muestre los múltiplos de 7 y la media de los números recogidos
 	 * en una array.
-	 * 
-	 * @param datos (int[]) - array que guarda los datos introducidos por teclado.
-	 * @param sc    (Scanner) variable para recoger datos por teclado.
 	 */
 	public static void main(String[] args) {
 		int[] datos = new int[10];
@@ -36,8 +33,6 @@ public class Ejercicio03 {
 	 * array.
 	 * 
 	 * @param datos(int[]) - array de números que obtenemos en el main.
-	 * @param contador     (int) - variable que va contando cuántos múltiplos hay en
-	 *                     la arra.
 	 */
 	public static void multiplosSiete(int[] datos) {
 		int contador = 0;
@@ -55,7 +50,6 @@ public class Ejercicio03 {
 	 * Función que calcula la media de los datos introducidos.
 	 * 
 	 * @param datos (int[]) - array de números que obtenemos en el main.
-	 * @param suma  (float) - la suma de todos los valores de la array.
 	 */
 	public static void mediaDatos(int[] datos) {
 		float suma = 0;

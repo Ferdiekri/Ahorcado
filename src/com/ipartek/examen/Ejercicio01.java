@@ -17,9 +17,6 @@ public class Ejercicio01 {
 	/**
 	 * Programa que calcule mediante el peso de 30 boxeadores a qué categoría
 	 * pertenecen.
-	 * 
-	 * @param peso (int) peso del boxeado introducido por teclado.
-	 * @param sc   (Scanner) variable para recoger datos por teclado.
 	 */
 	public static void main(String[] args) {
 		
