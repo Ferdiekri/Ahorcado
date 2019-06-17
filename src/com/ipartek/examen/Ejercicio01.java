@@ -2,6 +2,9 @@ package com.ipartek.examen;
 
 import java.util.Scanner;
 
+/**
+ * @author Eder Ibáñez Rojo
+ */
 public class Ejercicio01 {
 
 	/**
@@ -39,7 +42,7 @@ public class Ejercicio01 {
 		}
 
 		sc.close();
-		
+
 	}
 
 }
