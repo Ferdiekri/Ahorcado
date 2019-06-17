@@ -78,7 +78,6 @@ public class Ahorcado {
 
 			if (vidas == 0) {
 				System.out.println("\n\nHas muerto.");
-				break;
 			} else {
 				System.out.println("\n\nTe quedan " + vidas + "/7 vidas.");
 			}
@@ -88,7 +87,8 @@ public class Ahorcado {
 				System.out.println("¡HAS ACERTADO! Enhorabuena. Te has salvado.");
 			}
 
-		} while (!igualarPalabras);
+		} while (!igualarPalabras && vidas>0);
+		//} while (!igualarPalabras);
 
 		System.out.println("FIN DEL PROGRAMA.");
 
