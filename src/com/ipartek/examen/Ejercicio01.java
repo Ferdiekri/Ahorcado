@@ -15,8 +15,7 @@ public class Ejercicio01 {
 		int peso = 0;
 		Scanner sc = new Scanner(System.in);
 
-		// for (int i = 0; i < 30; i++) {
-		for (int i = 1; i <= 5; i++) {
+		for (int i = 1; i <= 30; i++) {
 			System.out.print("Introduce el peso del boxeador #" + i + ": ");
 
 			try {
@@ -40,7 +39,7 @@ public class Ejercicio01 {
 		}
 
 		sc.close();
-
+		
 	}
 
 }
