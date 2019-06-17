@@ -15,10 +15,19 @@ public class Tren {
 	private int asientosOcupados; // número entero
 	private int annosActivo; // número entero
 
+	
 	// constructores
 
-	public Tren(String tipo, int referencia, int asientosOcupados, int annosActivo) {
+	public Tren() {
 		super();
+		this.tipo = "Tren básico";
+		this.referencia = 00000;
+		this.asientosOcupados = 0;
+		this.annosActivo = 0;
+	}
+	
+	public Tren(String tipo, int referencia, int asientosOcupados, int annosActivo) {
+		this();
 		this.tipo = tipo;
 		this.referencia = referencia;
 		this.asientosOcupados = asientosOcupados;
