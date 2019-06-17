@@ -20,7 +20,7 @@ public class Ejercicio03 {
 
 		for (int i = 0; i < datos.length; i++) {
 			System.out.print("Introduce el número de la posición #" + i + ": ");
-			datos[i] = sc.nextInt();
+			datos[i] = Integer.parseInt(sc.nextLine());
 		}
 
 		multiplosSiete(datos);

@@ -22,7 +22,7 @@ public class Ejercicio01 {
 			System.out.print("Introduce el peso del boxeador #" + i + ": ");
 
 			try {
-				peso = sc.nextInt();
+				peso = Integer.parseInt(sc.nextLine());
 			} catch (Exception e) {
 				System.out.println("Ha introducido datos sin el formato indicado o fuera del rango.");
 				break;

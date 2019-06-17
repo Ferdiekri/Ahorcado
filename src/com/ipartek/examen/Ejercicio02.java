@@ -18,7 +18,7 @@ public class Ejercicio02 {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Introduce la puntuación del piloto: ");
-		puntos = sc.nextInt();
+		puntos = Integer.parseInt(sc.nextLine());
 
 		if (ganar(puntos)) {
 			System.out.println("Puedes ganar el campeonato.");

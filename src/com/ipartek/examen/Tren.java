@@ -15,7 +15,6 @@ public class Tren {
 	private int asientosOcupados; // número entero
 	private int annosActivo; // número entero
 
-	
 	// constructores
 
 	public Tren() {
@@ -25,7 +24,7 @@ public class Tren {
 		this.asientosOcupados = 0;
 		this.annosActivo = 0;
 	}
-	
+
 	public Tren(String tipo, int referencia, int asientosOcupados, int annosActivo) {
 		this();
 		this.tipo = tipo;
@@ -40,7 +39,7 @@ public class Tren {
 		return tipo;
 	}
 
-	public void setTipo(String tipo) {
+	public void setTipo(String tipo) throws Exception {		
 		this.tipo = tipo;
 	}
 
@@ -48,7 +47,7 @@ public class Tren {
 		return referencia;
 	}
 
-	public void setReferencia(int referencia) {
+	public void setReferencia(int referencia) throws Exception {
 		this.referencia = referencia;
 	}
 
@@ -67,6 +66,14 @@ public class Tren {
 	public void setAnnosActivo(int annosActivo) {
 		this.annosActivo = annosActivo;
 	}
+
+	/*
+	 * public void setCodigo(String codigo) throws Exception { if ((codigo != null)
+	 * && (codigo.length() == LONGITUD_CODIGO)) { this.codigo = codigo; } else {
+	 * throw new Exception("La longitud del código debe ser " + LONGITUD_CODIGO +
+	 * "."); } }
+	 * 
+	 */
 
 	// resto de funciones
 

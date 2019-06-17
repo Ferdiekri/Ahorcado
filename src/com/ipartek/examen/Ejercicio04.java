@@ -21,32 +21,32 @@ public class Ejercicio04 {
 	 *                         por teclado.
 	 */
 	public static void main(String[] args) {
-		String tipo;
-		int referencia;
-		int asientosOcupados;
-		int annosActivo;
+		String tipo = null;
+		int referencia = 0;
+		int asientosOcupados = 0;
+		int annosActivo = 0;
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("Introduce el tipo de tren: ");
 		tipo = sc.nextLine();
 		System.out.print("Introduce la referencia de tren: ");
-		referencia = sc.nextInt();
+		referencia = Integer.parseInt(sc.nextLine());
 		System.out.print("Introduce el número de asientos ocupados: ");
-		asientosOcupados = sc.nextInt();
+		asientosOcupados = Integer.parseInt(sc.nextLine());
 		System.out.print("Introduce cuántos años tiene el tren: ");
-		annosActivo = sc.nextInt();
+		annosActivo = Integer.parseInt(sc.nextLine());
 
-		Tren locomotroa = new Tren(tipo, referencia, asientosOcupados, annosActivo);
+		Tren locomotora = new Tren(tipo, referencia, asientosOcupados, annosActivo);
 
-		System.out.println(locomotroa.toString());
+		System.out.println(locomotora.toString());
 
-		if (locomotroa.demasiadoViejo()) {
+		if (locomotora.demasiadoViejo()) {
 			System.out.println("El tren ya es demasiado viejo para circular.");
 		} else {
 			System.out.println("El tren todavía puede circular.");
 		}
 
-		if (locomotroa.trenLleno()) {
+		if (locomotora.trenLleno()) {
 			System.out.println("El tren ya está completo.");
 		} else {
 			System.out.println("El tren todavía tiene plazas disponibles.");
