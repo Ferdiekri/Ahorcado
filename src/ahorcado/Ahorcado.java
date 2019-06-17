@@ -99,7 +99,7 @@ public class Ahorcado {
 	 * Función que selecciona una palabra aleatoria.
 	 * 
 	 * @param palabras (String[]) - array con diferentes palabras.
-	 * @param elegir   (int) - variable que decicirá qué palabra de la array se
+	 * @param elegir (int) - variable que decicirá qué palabra de la array se
 	 *                 elige.
 	 * @return (char[]) - array con la palabra a adivinar.
 	 */
@@ -124,6 +124,8 @@ public class Ahorcado {
 	 * 
 	 * @param primera (char[]) - array con la palabra original.
 	 * @param segunda (char[]) - array con la palabra del jugador.
+	 * @param original (String) - cadena donde guardar el resultado de la primera Array.
+	 * @param creada (String) - cadena donde guardar el resultado de la segunda Array.
 	 * @return (boolean) - devuelve si las dos arrays son iguales.
 	 */
 	public static boolean comprobarPalabras(char[] primera, char[] segunda) {
