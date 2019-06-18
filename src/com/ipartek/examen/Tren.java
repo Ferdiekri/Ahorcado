@@ -5,8 +5,8 @@ package com.ipartek.examen;
  */
 public class Tren {
 
-	private static final int MAXIMOS_PASAJEROS = 400;
-	private static final int ANNOS_ACTIVO = 40;
+	public static final int MAXIMOS_PASAJEROS = 400;
+	public static final int ANNOS_ACTIVO = 40;
 
 	// atributos
 
@@ -39,7 +39,7 @@ public class Tren {
 		return tipo;
 	}
 
-	public void setTipo(String tipo) throws Exception {
+	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
 
@@ -47,7 +47,7 @@ public class Tren {
 		return referencia;
 	}
 
-	public void setReferencia(int referencia) throws Exception {
+	public void setReferencia(int referencia) {
 		this.referencia = referencia;
 	}
 
